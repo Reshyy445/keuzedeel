@@ -1,0 +1,21 @@
+.btn {
+  @include button-style;
+}
+
+.popup-btn {
+  @include button-style;
+}
+
+.project-btn {
+  @include button-style;
+}
+
+.cv-btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: $accent-color;
+  color: $white;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  margin-top: 0.5rem;
+}

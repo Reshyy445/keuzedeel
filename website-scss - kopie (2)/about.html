@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="/scss/style.css">
+</head>
+<body>
+<header class="navbar">
+    <div class="container">
+        <div class="logo">Viresh.</div>
+        <div class="hamburger" id="menu-button">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav class="dropdown-menu" id="dropdown-menu">
+            <div class="close-btn" id="close-button">&times;</div>
+            <a href="index.html">Home</a>
+            <a href="product.html">Product</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<div class="bubbles">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+</div><section class="about-container">
+    <div class="about-photo">
+        <img src="images/modern-dots-pattern-background-free-vector.jpg" alt="About me photo">
+    </div>
+
+    <div class="about-info">
+        <div class="info-block">
+            <h2>About Me</h2>
+            <p>
+                I'm Viresh, an enthusiastic Software Development student from Rotterdam. I have a passion for technology, design, and creating websites that are both functional and visually appealing.
+            </p>
+        </div>
+
+        <div class="info-block">
+            <h2>Education & Experience</h2>
+            <p>
+                I'm currently studying at the Techniek College Rotterdam (MBO level 4), where I work on various projects using HTML, CSS/SCSS, JavaScript, and PHP. I'm also learning about databases and back-end development.
+            </p>
+        </div>
+
+        <div class="info-block">
+            <h2>Hobbies</h2>
+            <p>
+                Outside of school, I enjoy working on personal projects, gaming, staying active with sports, and spending quality time with good friends. I'm always curious about how things work technically and constantly strive to improve my skills.
+            </p>
+        </div>
+    </div>
+</section>
+
+
+
+<footer class="site-footer">
+    <div class="footer-content">
+        <div class="contact-info">
+            <h3>Contact</h3>
+            <p>Email: <a href="mailto:viresh@example.com">viresh@example.com</a></p>
+            <p>Phone: +31 6 12345678</p>
+        </div>
+
+        <div class="social-media">
+            <h3>Follow Me</h3>
+            <a href="https://twitter.com/yourusername" target="_blank">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/twitter/twitter-original.svg" alt="Twitter">
+            </a>
+            <a href="https://github.com/yourusername" target="_blank">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="GitHub">
+            </a>
+            <a href="https://linkedin.com/in/yourusername" target="_blank">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg" alt="LinkedIn">
+            </a>
+        </div>
+
+
+        <div class="cv-download">
+            <h3>Resume</h3>
+            <a href="cv/Viresh-CV.pdf" download class="cv-btn">Download CV</a>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2025 Viresh. All rights reserved.</p>
+    </div>
+</footer>
+
+
+
+<script>
+
+const menuBtn = document.getElementById('menu-button');
+const dropdown = document.getElementById('dropdown-menu');
+const closeBtn = document.getElementById('close-button');
+
+// Menu openen
+menuBtn.addEventListener('click', () => {
+dropdown.classList.add('active');
+});
+
+// Menu sluiten via sluitknop
+closeBtn.addEventListener('click', () => {
+dropdown.classList.remove('active');
+});
+
+// Menu sluiten bij klikken buiten het menu
+document.addEventListener('click', (event) => {
+if (
+!dropdown.contains(event.target) &&
+!menuBtn.contains(event.target)
+) {
+dropdown.classList.remove('active');
+}
+});
+const buttons = document.querySelectorAll('.popup-btn');
+const popups = document.querySelectorAll('.popup-overlay');
+
+buttons.forEach(btn => {
+btn.addEventListener('click', () => {
+const target = document.getElementById(btn.dataset.popup);
+target.style.display = 'block';
+});
+});
+
+popups.forEach(popup => {
+popup.addEventListener('click', (e) => {
+if (e.target.classList.contains('popup-overlay') || e.target.classList.contains('close-btn')) {
+popup.style.display = 'none';
+}
+});
+});
+
+</script>

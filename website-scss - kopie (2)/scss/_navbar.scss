@@ -1,0 +1,80 @@
+.navbar {
+  background-color: $navbar-bg;
+  color: $navbar-text;
+  padding: 1rem 2rem;
+
+  .logo {
+    color: $text-color;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+  }
+
+  .nav-links {
+    a {
+      color: $text-color;
+      text-decoration: none;
+      margin-left: 1.5rem;
+      font-weight: bold;
+      transition: color 0.3s;
+
+      &:hover {
+        color: $hover-color;
+      }
+    }
+  }
+
+  .hamburger {
+    width: 30px;
+    height: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+
+    span {
+      display: block;
+      height: 4px;
+      background-color: $navbar-text;
+      border-radius: 2px;
+    }
+  }
+}
+
+.dropdown-menu {
+  position: fixed;
+  top: 0;
+  right: -314px;
+  width: 250px;
+  height: 100vh;
+  background-color: #f8f8f8;
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  gap: 1.5rem;
+  transition: right 0.3s ease;
+  z-index: 999;
+
+  .close-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+
+  a {
+    text-decoration: none;
+    color: $navbar-text;
+    font-size: 1.2rem;
+
+    &:hover {
+      color: $button-color;
+    }
+  }
+
+  &.active {
+    right: 0;
+  }
+}

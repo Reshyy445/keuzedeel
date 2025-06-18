@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="scss/style.css">
+</head>
+<body>
+<header class="navbar">
+    <div class="container">
+        <div class="logo">Viresh.</div>
+
+        <div class="hamburger" id="menu-button">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <nav class="dropdown-menu" id="dropdown-menu">
+            <div class="close-btn" id="close-button">&times;</div>
+            <a href="index.html">Home</a>
+            <a href="product.html">Product</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<div class="bubbles">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+
+
+
+<section class="intro">
+    <h1>Hi, I'm Viresh – an aspiring web developer</h1>
+    <p>I build user-friendly websites with a focus on design and functionality.</p>
+    <p>I'm currently studying Software Development at the Techniek College Rotterdam. I enjoy working on creative projects and constantly strive to learn more.</p>
+    <a href="#projects" class="btn">View My Work</a>
+</section>
+
+<section class="features">
+    <!-- HTML -->
+    <div class="feature-box">
+        <img src="images/html5-brands.svg" alt="HTML Logo" class="feature-icon">
+        <h3>HTML</h3>
+        <p>I use HTML to structure web content clearly and semantically.</p>
+        <button class="popup-btn" data-popup="html-popup">More Info</button>
+    </div>
+    <div id="html-popup" class="popup-overlay">
+        <div class="popup-content">
+            <span class="close-btn">&times;</span>
+            <h2>What is HTML?</h2>
+            <p>HTML (HyperText Markup Language) is the standard language for creating the structure of web pages. It allows you to define elements like headings, paragraphs, links, images, and more in a structured and semantic way.</p>
+        </div>
+    </div>
+
+    <!-- CSS -->
+    <div class="feature-box">
+        <img src="images/css-brands.svg" alt="CSS Logo" class="feature-icon">
+        <h3>CSS</h3>
+        <p>With CSS I create responsive and visually appealing layouts.</p>
+        <button class="popup-btn" data-popup="css-popup">More Info</button>
+    </div>
+    <div id="css-popup" class="popup-overlay">
+        <div class="popup-content">
+            <span class="close-btn">&times;</span>
+            <h2>What is CSS?</h2>
+            <p>CSS (Cascading Style Sheets) is used to style and layout web pages — including colors, fonts, spacing, and responsiveness. It brings design to structure.</p>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <div class="feature-box">
+        <img src="images/js-brands.svg" alt="JavaScript Logo" class="feature-icon">
+        <h3>JavaScript</h3>
+        <p>I use JavaScript to build interactive features and dynamic UI.</p>
+        <button class="popup-btn" data-popup="js-popup">More Info</button>
+    </div>
+    <div id="js-popup" class="popup-overlay">
+        <div class="popup-content">
+            <span class="close-btn">&times;</span>
+            <h2>What is JavaScript?</h2>
+            <p>JavaScript is a scripting language that enables interactive elements on websites, like buttons, sliders, animations, and more. It powers the behavior of web pages.</p>
+        </div>
+    </div>
+
+    <!-- PHP -->
+    <div class="feature-box">
+        <img src="images/php-brands.svg" alt="PHP Logo" class="feature-icon">
+        <h3>PHP</h3>
+        <p>I use PHP to handle form processing, databases and backend logic.</p>
+        <button class="popup-btn" data-popup="php-popup">More Info</button>
+    </div>
+    <div id="php-popup" class="popup-overlay">
+        <div class="popup-content">
+            <span class="close-btn">&times;</span>
+            <h2>What is PHP?</h2>
+            <p>PHP is a server-side scripting language designed for web development. It connects front-end forms to databases, handles data processing, and builds dynamic content.</p>
+        </div>
+    </div>
+</section>
+
+<section class="split-circle-image">
+    <div class="side left">
+        <h3>Designer</h3>
+        <ul>
+            <li>UI/UX Design</li>
+            <li>Wireframes & Prototypes</li>
+            <li>Color Theory</li>
+            <li>Typography</li>
+        </ul>
+    </div>
+
+    <img src="images/pie-chart.png" alt="Designer vs Coder Chart">
+
+    <div class="side right">
+        <h3>Coder</h3>
+        <ul>
+            <li>JavaScript & PHP</li>
+            <li>APIs & Databases</li>
+            <li>Frontend Logic</li>
+            <li>Backend Systems</li>
+        </ul>
+    </div>
+</section>
+
+<section class="projects">
+    <h2>My Projects</h2>
+    <div class="projects-container">
+        <div class="project-card">
+            <img src="images/Schermafbeelding%202025-06-03%20202825.png" alt="Project 1">
+            <h3>Chirpify (Twitter Clone)</h3>
+            <p>A social media clone where users can post, like, follow and more. Built with HTML, CSS, JavaScript, and PHP.</p>
+            <a href="#" class="project-btn">View Project</a>
+        </div>
+        <div class="project-card">
+            <img src="images/Schermafbeelding%202025-06-03%20203125.png" alt="Project 2">
+            <h3>Portfolio Website</h3>
+            <p>My personal portfolio showcasing skills, projects, and more. Built with modern responsive design techniques.</p>
+            <a href="#" class="project-btn">View Project</a>
+        </div>
+        <div class="project-card">
+            <img src="images/form.png" alt="Project 3">
+            <h3>Contact Form PHP</h3>
+            <p>A working contact form using PHP and email integration, with form validation and security handling.</p>
+            <a href="#" class="project-btn">View Project</a>
+        </div>
+    </div>
+</section>
+<section class="education-skills">
+    <div class="education">
+        <h2>Education</h2>
+        <p>I’m currently studying <strong>Software Development</strong> at <strong>Techniek College Rotterdam</strong>, where I’m learning to code with HTML, CSS, JavaScript, and PHP. I work on practical projects and deepen my knowledge in both front-end and back-end development.</p>
+    </div>
+
+    <div class="skills">
+        <h2>Personal Qualities</h2>
+        <div class="skill">
+            <p> Problem-Solving – I enjoy tackling challenges and finding effective solutions.</p>
+        </div>
+        <div class="skill">
+            <p>Team Player – I collaborate well and support others in group projects.</p>
+        </div>
+        <div class="skill">
+            <p> Goal-Oriented – I set clear objectives and work consistently to achieve them.</p>
+        </div>
+        <div class="skill">
+            <p> Eager to Learn – I continuously improve my skills and stay curious.</p>
+        </div>
+    </div>
+</section>
+
+
+<footer class="site-footer">
+    <div class="footer-content">
+        <div class="contact-info">
+            <h3>Contact</h3>
+            <p>Email: <a href="mailto:viresh@example.com">viresh@example.com</a></p>
+            <p>Phone: +31 6 12345678</p>
+        </div>
+
+        <div class="social-media">
+            <h3>Follow Me</h3>
+            <a href="https://twitter.com/yourusername" target="_blank">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/twitter/twitter-original.svg" alt="Twitter">
+            </a>
+            <a href="https://github.com/yourusername" target="_blank">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="GitHub">
+            </a>
+            <a href="https://linkedin.com/in/yourusername" target="_blank">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg" alt="LinkedIn">
+            </a>
+        </div>
+
+
+        <div class="cv-download">
+            <h3>Resume</h3>
+            <a href="cv/Viresh-CV.pdf" download class="cv-btn">Download CV</a>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2025 Viresh. All rights reserved.</p>
+    </div>
+</footer>
+
+</body>
+<script>
+
+    const menuBtn = document.getElementById('menu-button');
+    const dropdown = document.getElementById('dropdown-menu');
+    const closeBtn = document.getElementById('close-button');
+
+    // Menu openen
+    menuBtn.addEventListener('click', () => {
+        dropdown.classList.add('active');
+    });
+
+    // Menu sluiten via sluitknop
+    closeBtn.addEventListener('click', () => {
+        dropdown.classList.remove('active');
+    });
+
+    // Menu sluiten bij klikken buiten het menu
+    document.addEventListener('click', (event) => {
+        if (
+            !dropdown.contains(event.target) &&
+            !menuBtn.contains(event.target)
+        ) {
+            dropdown.classList.remove('active');
+        }
+    });
+    const buttons = document.querySelectorAll('.popup-btn');
+    const popups = document.querySelectorAll('.popup-overlay');
+
+    buttons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const target = document.getElementById(btn.dataset.popup);
+            target.style.display = 'block';
+        });
+    });
+
+    popups.forEach(popup => {
+        popup.addEventListener('click', (e) => {
+            if (e.target.classList.contains('popup-overlay') || e.target.classList.contains('close-btn')) {
+                popup.style.display = 'none';
+            }
+        });
+    });
+
+</script>
+</html>
